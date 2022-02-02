@@ -1,0 +1,16 @@
+.options{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .options__checkbox{
+        margin-left: 50px;
+        margin-right: 13px;
+    }
+    .options__button{
+        margin-right: 10px;
+        .options__buttonText{
+            line-height: 20px;
+        }
+    }
+    
+}

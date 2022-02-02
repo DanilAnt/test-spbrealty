@@ -1,5 +1,18 @@
+@import "_vars";
+@import "_reset.scss";
+
 body {
-    background-color: black;
-    font-size: 21px;
-    color: white;
+    background-color: $bg-color_1;
+    font-size: $fz_1;
+    color: $fc_1;
+    font-family: PT Sans,sans-serif;
 }
+@import 'blocks/container.scss';
+@import 'blocks/header.scss';
+@import 'blocks/button.scss';
+@import 'blocks/checkbox.scss';
+@import 'blocks/searchBar.scss';
+@import 'blocks/filter.scss';
+@import 'blocks/options.scss';
+@import 'blocks/cards.scss';
+@import 'blocks/card.scss';

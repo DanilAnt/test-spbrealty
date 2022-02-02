@@ -1,0 +1,18 @@
+.header{
+    margin-top: 90px;
+    display:flex;
+    margin-bottom: 32px;
+    .header__searchBar{
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+    .header__filter{
+        flex-grow: 0;
+        width: 190px;
+        margin-right: 10px;
+    }
+    .header__button{
+        flex-grow: 0;
+        min-width: 155px;
+    }
+}

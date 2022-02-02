@@ -1,1 +1,59 @@
-<header>header</header>
+<header class="header container">
+
+    <div class="header__searchBar searchBar">
+        <div class="searchBar__icon">
+            <svg class="searchBar__svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15 15L11 11M7 13C3.68629 13 1 10.3137 1 7C1 3.68629 3.68629 1 7 1C10.3137 1 13 3.68629 13 7C13 10.3137 10.3137 13 7 13Z"
+                    stroke-width="1.5" />
+            </svg>
+        </div>
+        <input type="text" class="searchBar__input" id="search" name='search' placeholder="Введите ЖК / корпус / № квартиры / № паркинга" />
+
+    </div>
+    <div class="header__filter filter" id="filter">
+        <div class="filter__placeholder">
+            Все статусы
+        </div>
+        <div class="filter__icon">
+            <div class="filter__stroke">
+                &#8735;
+            </div>
+        </div>
+        
+        <ul class="filter__dropdown">
+            <li class="filter__dropdownItem">
+                <input type="checkbox" name="booked" data-filter="booked" checked id="booked" class="filter__dropdownCheckbox checkbox">
+                <label for="booked" class="checkbox__label">Забронировано</label>
+
+            </li>
+            <li class="filter__dropdownItem">
+                <input type="checkbox" name="sold" data-filter="sold" checked id="sold" class="filter__dropdownCheckbox checkbox">
+                <label for="sold" class="checkbox__label">Продано</label>
+
+            </li>
+            <li class="filter__dropdownItem">
+                <input type="checkbox" name="active" data-filter="active" checked id="active" class="filter__dropdownCheckbox checkbox">
+                <label for="active" class="checkbox__label">Активно</label>
+
+            </li>
+
+        </ul>
+        <div class="filter__mask" id="filterMask">
+
+        </div>
+    </div>
+
+    <button type="button" class="header__button button">
+        <span class="button__text">
+            Очистить корзину
+        </span>
+        <div class="button__icon">
+            <svg class="button__svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M1 1L13 13M1 13L13 1" />
+            </svg>
+        </div>
+    </button>
+
+</header>

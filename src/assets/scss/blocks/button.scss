@@ -1,0 +1,25 @@
+.button{
+    background-color: $button-color;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 9px 16px 9px 13px;
+    transition: all 0.2s linear;
+    &:hover{
+        background-color: darken($color: $button-color, $amount: 8);
+    }
+    .button__text{
+        font-size: $fz_2;
+        color: $fc_1;
+        margin-right: 12px;
+        white-space:  nowrap;
+    }
+    .button__icon{
+        width: 12px;
+        height: 12px;
+        .button__svg{
+            stroke: $fc_1;
+        }
+        
+    }
+}
