@@ -37,11 +37,22 @@
         width: 100%;
         display: flex;
         padding: 25px;
-
+        @media(max-width:576px){
+            padding: 10px;
+        }
+        @media(max-width:430px){
+            padding-bottom: 25px;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
         .card__check{
             display: flex;
             align-items: center;
             margin-right: 25px;
+            @media(max-width:430px){
+                margin-right: 0;
+                margin-top: 10px;
+            }
             .card__checkbox{
                 display: flex;
                 min-width:16px;
@@ -53,6 +64,7 @@
             flex-wrap: wrap;
             width: 100%;
             padding-right: 10px;
+            
             .card__inner{
                 display: flex;
                 flex-wrap: wrap;
@@ -60,6 +72,10 @@
                 align-items: center;
                 justify-content: flex-start;
                 margin-bottom: 3px;
+                @media(max-width:430px){
+                    justify-content: center;
+                    margin-top: 5px;
+                }
                 .card__price{
                     margin-right: 16px;
                 }
@@ -83,6 +99,11 @@
                 width: 100%;
                 margin-bottom: 15px;
                line-height: 150%;
+               @media(max-width:430px){
+                   display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
             }
             .card__number{
                 display: flex;
@@ -92,6 +113,10 @@
                 justify-content: space-between;
                 padding-right: 20px;
                 border-right: 1px solid $border-color_1;
+                @media(max-width:430px){
+                    flex-grow: 1;
+                    align-items: flex-end;
+                }
             }
             .card__size{
                 display: flex;
@@ -106,10 +131,16 @@
                 width:100%;
                 margin-top: 16px;
                 line-height: 150%;
+                @media(max-width:430px){
+                    text-align: center;
+                }
                 .card__adressLabel{
                     position: absolute;
                     top: 4px;
                     left: -19px;
+                    @media(max-width:430px){
+                        left: -4px;
+                    }
                 }
             }
         }
@@ -124,6 +155,9 @@
                 padding:6px 9px 6px 23px;
                 text-align: right;
                 margin-right: -25px;
+                @media(max-width:576px){
+                    margin-right: -10px;
+                }
                 margin-bottom: 27px;
                 white-space: nowrap;
                 line-height: 18px;

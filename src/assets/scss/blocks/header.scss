@@ -2,17 +2,29 @@
     margin-top: 90px;
     display:flex;
     margin-bottom: 32px;
+    @media(max-width:576px){
+       flex-wrap: wrap;
+    }
     .header__searchBar{
         flex-grow: 1;
         margin-right: 10px;
+        @media(max-width:576px){
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
     }
     .header__filter{
         flex-grow: 0;
         width: 190px;
         margin-right: 10px;
+
     }
     .header__button{
         flex-grow: 0;
         min-width: 155px;
+        @media(max-width:576px){
+            margin: 8px 0;
+        }
     }
 }
